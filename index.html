@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Nivashini Adhi | Test Business Analyst</title>
+<title>Nivashini Adhi | Information Technology Business Consultant</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
   :root {
@@ -18,15 +18,8 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--text);
-    overflow-x: hidden;
-  }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
 
   /* NAV */
   nav {
@@ -36,393 +29,445 @@
     background: rgba(26,39,68,0.97);
     backdrop-filter: blur(10px);
   }
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    color: var(--gold);
-    letter-spacing: 0.05em;
-  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--gold); letter-spacing: 0.05em; }
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-  .nav-links a {
-    color: rgba(255,255,255,0.75);
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
+  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: color 0.3s; }
   .nav-links a:hover { color: var(--gold); }
 
   /* HERO */
   .hero {
-    min-height: 100vh;
-    background: var(--navy);
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+    min-height: 100vh; background: var(--navy);
+    display: flex; align-items: center; position: relative; overflow: hidden;
     padding: 8rem 4rem 4rem;
   }
-  .hero::before {
-    content: '';
-    position: absolute; top: -20%; right: -10%;
-    width: 700px; height: 700px;
-    border-radius: 50%;
-    border: 1px solid rgba(201,168,76,0.15);
-    animation: rotate 30s linear infinite;
-  }
-  .hero::after {
-    content: '';
-    position: absolute; top: 10%; right: 5%;
-    width: 400px; height: 400px;
-    border-radius: 50%;
-    border: 1px solid rgba(201,168,76,0.08);
-    animation: rotate 20s linear infinite reverse;
-  }
+  .hero::before { content: ''; position: absolute; top: -20%; right: -10%; width: 700px; height: 700px; border-radius: 50%; border: 1px solid rgba(201,168,76,0.15); animation: rotate 30s linear infinite; }
+  .hero::after { content: ''; position: absolute; top: 10%; right: 5%; width: 400px; height: 400px; border-radius: 50%; border: 1px solid rgba(201,168,76,0.08); animation: rotate 20s linear infinite reverse; }
   @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
   .hero-content { max-width: 800px; z-index: 2; }
-
-  .hero-tag {
-    display: inline-block;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    padding: 0.4rem 1rem;
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeUp 0.8s forwards 0.2s;
-  }
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    line-height: 1.05;
-    color: var(--white);
-    margin-bottom: 1rem;
-    opacity: 0;
-    animation: fadeUp 0.8s forwards 0.4s;
-  }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--gold);
-  }
-  .hero-sub {
-    font-size: 1.05rem;
-    color: rgba(255,255,255,0.65);
-    line-height: 1.8;
-    max-width: 580px;
-    margin-bottom: 2.5rem;
-    opacity: 0;
-    animation: fadeUp 0.8s forwards 0.6s;
-  }
-  .hero-stats {
-    display: flex; gap: 3rem; flex-wrap: wrap;
-    margin-bottom: 3rem;
-    opacity: 0;
-    animation: fadeUp 0.8s forwards 0.8s;
-  }
+  .hero-tag { display: inline-block; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 0.4rem 1rem; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s forwards 0.2s; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; color: var(--white); margin-bottom: 1rem; opacity: 0; animation: fadeUp 0.8s forwards 0.4s; }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.65); line-height: 1.8; max-width: 580px; margin-bottom: 2.5rem; opacity: 0; animation: fadeUp 0.8s forwards 0.6s; }
+  .hero-stats { display: flex; gap: 3rem; flex-wrap: wrap; margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.8s forwards 0.8s; }
   .stat-item { text-align: left; }
-  .stat-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    color: var(--gold);
-    line-height: 1;
-  }
-  .stat-label {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.5);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 0.3rem;
-  }
-  .hero-cta {
-    display: flex; gap: 1rem; flex-wrap: wrap;
-    opacity: 0;
-    animation: fadeUp 0.8s forwards 1s;
-  }
-  .btn-primary {
-    background: var(--gold);
-    color: var(--navy);
-    padding: 0.9rem 2rem;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: all 0.3s;
-  }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--gold); line-height: 1; }
+  .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.3rem; }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s forwards 1s; }
+  .btn-primary { background: var(--gold); color: var(--navy); padding: 0.9rem 2rem; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.3s; }
   .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
-  .btn-outline {
-    border: 1px solid rgba(255,255,255,0.3);
-    color: var(--white);
-    padding: 0.9rem 2rem;
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: all 0.3s;
-  }
+  .btn-outline { border: 1px solid rgba(255,255,255,0.3); color: var(--white); padding: 0.9rem 2rem; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.3s; }
   .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 
   /* SECTIONS */
   section { padding: 6rem 4rem; }
-
-  .section-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.8rem;
-    font-weight: 500;
-  }
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    color: var(--navy);
-    line-height: 1.15;
-    margin-bottom: 3rem;
-  }
+  .section-label { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; font-weight: 500; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--navy); line-height: 1.15; margin-bottom: 3rem; }
 
   /* ABOUT */
   .about { background: var(--white); }
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: start;
-  }
-  .about-text p {
-    font-size: 1rem;
-    line-height: 1.9;
-    color: #444;
-    margin-bottom: 1.2rem;
-  }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .about-text p { font-size: 1rem; line-height: 1.9; color: #444; margin-bottom: 1.2rem; }
   .about-highlights { display: flex; flex-direction: column; gap: 1.5rem; }
-  .highlight-card {
-    border-left: 3px solid var(--gold);
-    padding: 1.2rem 1.5rem;
-    background: var(--cream);
-  }
-  .highlight-card h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.05rem;
-    color: var(--navy);
-    margin-bottom: 0.4rem;
-  }
+  .highlight-card { border-left: 3px solid var(--gold); padding: 1.2rem 1.5rem; background: var(--cream); }
+  .highlight-card h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--navy); margin-bottom: 0.4rem; }
   .highlight-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
 
   /* EXPERIENCE */
   .experience { background: var(--cream); }
   .exp-timeline { display: flex; flex-direction: column; gap: 0; }
   .exp-item {
-    display: grid;
-    grid-template-columns: 200px 1px 1fr;
-    gap: 0 2.5rem;
-    padding-bottom: 3rem;
-    position: relative;
+    display: grid; grid-template-columns: 200px 1px 1fr;
+    gap: 0 2.5rem; padding-bottom: 3rem; position: relative;
+    cursor: pointer; transition: all 0.3s;
   }
-  .exp-date {
-    text-align: right;
-    padding-top: 0.2rem;
-  }
-  .exp-date .year {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    color: var(--navy);
-    font-weight: 700;
-  }
-  .exp-date .period {
-    font-size: 0.78rem;
-    color: var(--muted);
-    display: block;
-    margin-top: 0.2rem;
-  }
-  .exp-line {
-    background: var(--gold);
-    width: 1px;
-    position: relative;
-  }
-  .exp-line::before {
-    content: '';
-    position: absolute;
-    top: 6px; left: 50%;
-    transform: translateX(-50%);
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: var(--gold);
-  }
-  .exp-body { padding-top: 0; }
-  .exp-body h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: var(--navy);
-    margin-bottom: 0.2rem;
-  }
-  .exp-company {
-    font-size: 0.82rem;
-    color: var(--gold);
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 0.9rem;
-  }
+  .exp-item:hover .exp-body { transform: translateX(4px); }
+  .exp-date { text-align: right; padding-top: 0.2rem; }
+  .exp-date .year { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--navy); font-weight: 700; }
+  .exp-date .period { font-size: 0.78rem; color: var(--muted); display: block; margin-top: 0.2rem; }
+  .exp-line { background: var(--gold); width: 1px; position: relative; }
+  .exp-line::before { content: ''; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
+  .exp-body { padding-top: 0; transition: transform 0.3s; }
+  .exp-body h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.2rem; }
+  .exp-company { font-size: 0.82rem; color: var(--gold); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.9rem; }
   .exp-body p { font-size: 0.92rem; color: #555; line-height: 1.8; margin-bottom: 0.8rem; }
   .exp-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
-  .tag {
-    font-size: 0.72rem;
-    padding: 0.3rem 0.8rem;
-    border: 1px solid rgba(26,39,68,0.2);
-    color: var(--navy);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  .tag { font-size: 0.72rem; padding: 0.3rem 0.8rem; border: 1px solid rgba(26,39,68,0.2); color: var(--navy); letter-spacing: 0.05em; text-transform: uppercase; }
+  .view-projects-btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    margin-top: 1rem; font-size: 0.8rem; color: var(--gold);
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    border: 1px solid var(--gold); padding: 0.5rem 1.2rem;
+    transition: all 0.3s; text-decoration: none;
   }
+  .view-projects-btn:hover { background: var(--gold); color: var(--navy); }
+  .view-projects-btn::after { content: '→'; }
 
   /* SKILLS */
   .skills { background: var(--navy); }
   .skills .section-title { color: var(--white); }
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-  }
-  .skill-category {
-    border: 1px solid rgba(201,168,76,0.25);
-    padding: 2rem;
-    transition: border-color 0.3s;
-  }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .skill-category { border: 1px solid rgba(201,168,76,0.25); padding: 2rem; transition: border-color 0.3s; }
   .skill-category:hover { border-color: var(--gold); }
-  .skill-category h4 {
-    font-size: 0.72rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-  }
+  .skill-category h4 { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; font-weight: 600; }
   .skill-list { list-style: none; }
-  .skill-list li {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.75);
-    padding: 0.45rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-  }
+  .skill-list li { font-size: 0.9rem; color: rgba(255,255,255,0.75); padding: 0.45rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; gap: 0.6rem; }
   .skill-list li::before { content: '—'; color: var(--gold); font-size: 0.7rem; }
 
   /* ACHIEVEMENTS */
   .achievements { background: var(--white); }
-  .ach-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  .ach-card {
-    padding: 2.5rem;
-    background: var(--cream);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
+  .ach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+  .ach-card { padding: 2.5rem; background: var(--cream); position: relative; overflow: hidden; transition: transform 0.3s; }
   .ach-card:hover { transform: translateY(-4px); }
-  .ach-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 3px;
-    background: var(--gold);
-  }
-  .ach-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .ach-card h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.05rem;
-    color: var(--navy);
-    margin-bottom: 0.6rem;
-  }
+  .ach-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gold); }
+  .ach-icon { font-size: 2rem; margin-bottom: 1rem; }
+  .ach-card h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--navy); margin-bottom: 0.6rem; }
   .ach-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
 
   /* CONTACT */
-  .contact {
-    background: var(--navy);
-    text-align: center;
-  }
+  .contact { background: var(--navy); text-align: center; }
   .contact .section-title { color: var(--white); margin-bottom: 1rem; }
   .contact-sub { color: rgba(255,255,255,0.55); font-size: 1rem; margin-bottom: 3rem; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.8; }
   .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
-  .contact-link {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    color: rgba(255,255,255,0.7);
-    text-decoration: none;
-    font-size: 0.9rem;
-    border: 1px solid rgba(255,255,255,0.15);
-    padding: 0.8rem 1.5rem;
-    transition: all 0.3s;
-  }
+  .contact-link { display: flex; align-items: center; gap: 0.6rem; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.15); padding: 0.8rem 1.5rem; transition: all 0.3s; }
   .contact-link:hover { border-color: var(--gold); color: var(--gold); }
 
   /* FOOTER */
-  footer {
-    background: #111d35;
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.78rem;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 0.05em;
+  footer { background: #111d35; text-align: center; padding: 2rem; font-size: 0.78rem; color: rgba(255,255,255,0.3); letter-spacing: 0.05em; }
+
+  /* HERO PHOTO */
+  .hero-photo { position: absolute; right: 6%; bottom: 0; width: 340px; height: 400px; overflow: hidden; z-index: 2; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(15%); opacity: 0; animation: fadeUp 1s forwards 1.2s; }
+
+  /* PROJECT PAGES */
+  .project-page { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--cream); z-index: 200; overflow-y: auto; }
+  .project-page.active { display: block; }
+  .project-page-inner { max-width: 900px; margin: 0 auto; padding: 6rem 2rem 4rem; }
+  .back-btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.8rem; color: var(--navy); letter-spacing: 0.1em;
+    text-transform: uppercase; font-weight: 600;
+    border: 1px solid var(--navy); padding: 0.5rem 1.2rem;
+    margin-bottom: 3rem; cursor: pointer; transition: all 0.3s;
+    background: none;
   }
+  .back-btn::before { content: '←'; }
+  .back-btn:hover { background: var(--navy); color: var(--white); }
+  .project-page-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(26,39,68,0.15); }
+  .project-page-header .company-label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.6rem; display: block; }
+  .project-page-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--navy); margin-bottom: 0.5rem; }
+  .project-page-header .period-badge { font-size: 0.82rem; color: var(--muted); }
+  .role-summary { background: var(--navy); color: var(--white); padding: 2rem; margin-bottom: 3rem; }
+  .role-summary p { font-size: 0.95rem; line-height: 1.8; color: rgba(255,255,255,0.8); }
+  .projects-list { display: flex; flex-direction: column; gap: 2.5rem; }
+  .project-card { background: var(--white); border-left: 4px solid var(--gold); padding: 2rem 2.5rem; }
+  .project-card-num { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.5rem; }
+  .project-card h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--navy); margin-bottom: 1rem; }
+  .project-card .project-overview { font-size: 0.95rem; color: #444; line-height: 1.8; margin-bottom: 1.5rem; }
+  .project-section-title { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--navy); font-weight: 700; margin-bottom: 0.8rem; margin-top: 1.5rem; }
+  .project-responsibilities { list-style: none; }
+  .project-responsibilities li { font-size: 0.9rem; color: #555; padding: 0.4rem 0; display: flex; gap: 0.8rem; line-height: 1.6; border-bottom: 1px solid rgba(26,39,68,0.06); }
+  .project-responsibilities li::before { content: '▸'; color: var(--gold); font-size: 0.7rem; margin-top: 0.3rem; flex-shrink: 0; }
+  .project-outcomes { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+  .outcome-badge { background: var(--cream); border: 1px solid rgba(201,168,76,0.4); font-size: 0.78rem; padding: 0.4rem 0.9rem; color: var(--navy); letter-spacing: 0.04em; }
 
   /* RESPONSIVE */
-
-  .hero-photo {
-    position: absolute;
-    right: 6%;
-    bottom: 0;
-    width: 340px;
-    height: 400px;
-    overflow: hidden;
-    z-index: 2;
-  }
-  .hero-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    filter: grayscale(15%);
-    opacity: 0;
-    animation: fadeUp 1s forwards 1.2s;
-  }
-  @media (max-width: 768px) {
-    .hero-photo { display: none; }
-  }
-
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
-    .hero { padding: 7rem 1.5rem 3rem; }
+    .hero {
+      padding: 7rem 1.5rem 3rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .hero-photo {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      max-width: 320px;
+      height: 320px;
+      margin: 2rem auto 0;
+      display: block;
+    }
     .hero-stats { gap: 1.5rem; }
     section { padding: 4rem 1.5rem; }
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
     .exp-date { text-align: left; }
     .exp-line { display: none; }
+    .project-page-inner { padding: 4rem 1.5rem 3rem; }
   }
 </style>
 </head>
 <body>
 
+<!-- PROJECT PAGES (hidden by default) -->
+
+<!-- AALA CONSULTANCY PROJECT PAGE -->
+<div class="project-page" id="page-aala">
+  <div class="project-page-inner">
+    <button class="back-btn" onclick="closePage()">Back to Experience</button>
+    <div class="project-page-header">
+      <span class="company-label">Aala Consultancy</span>
+      <h2>Information Technology Business Consultant</h2>
+      <span class="period-badge">January 2026 – Present</span>
+    </div>
+    <div class="role-summary">
+      <p>As Lead Consultant – ICT Quality Assurance (QAoALA), I operate as an independent consulting practitioner responsible for designing, delivering, and assuring the quality of Aala Consulting's ICT Quality Assurance Career Accelerator Program. I function as a practitioner-educator — combining industry mentoring, facilitation, and real-world judgement to build delivery-ready QA capability, rather than delivering academic or certification-based training.</p>
+    </div>
+    <div class="projects-list">
+      <div class="project-card">
+        <div class="project-card-num">Project 01</div>
+        <h3>QAoALA — ICT Quality Assurance Career Accelerator Program</h3>
+        <p class="project-overview">A practitioner-led, scenario-driven capability uplift program designed to develop real-world QA professionals. The program focuses on building risk-based testing ability, quality ownership, and professional decision-making — embedding Australian workplace expectations and professional standards into every module. As the sole program architect and lead facilitator, I align every delivery decision with Aala Consulting's philosophy of practical judgement, systems thinking, and industry authenticity.</p>
+        <div class="project-section-title">Business Consulting Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Design, maintain, and refine the QAoALA program curriculum to ensure ongoing industry relevance, integrity, and alignment with contemporary ICT delivery practices</li>
+          <li>Conduct stakeholder consultations to map program outcomes to industry needs and employer expectations across Australian ICT markets</li>
+          <li>Facilitate interactive, scenario-driven QA sessions across core modules, specialisation tracks, and capstone activities using real-world delivery conditions</li>
+          <li>Guide participants in applying risk-based testing, requirements analysis, execution discipline, and release validation across simulated enterprise contexts</li>
+          <li>Review and provide professional written feedback on QA artefacts including test strategies, test cases, defect reports, and execution summaries</li>
+          <li>Mentor participants to develop QA judgement, professional confidence, and stakeholder communication skills appropriate to Australian workplace norms</li>
+          <li>Design and oversee the QA capstone engagement — simulating real delivery timelines, accountability structures, and quality gates</li>
+          <li>Assess participant performance based on execution quality, risk awareness, and decision-making rather than theoretical completeness</li>
+          <li>Identify continuous improvement opportunities and provide advisory input to enhance program maturity and market positioning</li>
+          <li>Escalate material delivery risks, program integrity concerns, or quality issues to Aala leadership with structured recommendations</li>
+          <li>Strengthen Aala's reputation for practitioner-led, mentor-driven learning across its broader digital and ICT consulting portfolio</li>
+        </ul>
+        <div class="project-section-title">Measurable Outcomes</div>
+        <div class="project-outcomes">
+          <span class="outcome-badge">100% milestone delivery on schedule</span>
+          <span class="outcome-badge">Practitioner-grade curriculum established</span>
+          <span class="outcome-badge">Mentoring framework built from scratch</span>
+          <span class="outcome-badge">Industry-aligned capstone designed & deployed</span>
+          <span class="outcome-badge">Positive participant progression tracked across cohorts</span>
+          <span class="outcome-badge">ALA brand strengthened through program quality</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DEPT TREASURY & FINANCE PROJECT PAGE -->
+<div class="project-page" id="page-treasury">
+  <div class="project-page-inner">
+    <button class="back-btn" onclick="closePage()">Back to Experience</button>
+    <div class="project-page-header">
+      <span class="company-label">SA Department of Treasury & Finance · SA Government · Internship</span>
+      <h2>Consultant — BA & Governance</h2>
+      <span class="period-badge">July 2025 – December 2025</span>
+    </div>
+    <div class="role-summary">
+      <p>Selected as a Writing Consultant to lead a post-quantum cryptography risk and digital transformation strategy engagement for the South Australian Government. Operating within a 16-week PMO-governed framework, I provided structured analysis, transition roadmap design, and vulnerability cataloguing across live government enterprise systems — earning a Higher Distinction for program outcomes.</p>
+    </div>
+    <div class="projects-list">
+      <div class="project-card">
+        <div class="project-card-num">Project 01</div>
+        <h3>Post-Quantum Cryptography — Digital Transition Roadmap</h3>
+        <p class="project-overview">A high-impact government consulting engagement focused on transitioning the SA Government's enterprise systems from classical computing encryption to post-quantum cryptographic standards. I led the end-to-end analysis, gap identification, and strategic roadmap design — delivering all five project milestones on time and earning the highest academic recognition for the quality of outputs.</p>
+        <div class="project-section-title">Business Analysis Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Conducted current-state analysis across live government enterprise systems, identifying 15+ critical process gaps in cryptographic risk posture</li>
+          <li>Facilitated stakeholder workshops with government representatives to elicit requirements, validate assumptions, and align on transition priorities</li>
+          <li>Developed a phased digital transition roadmap from classical encryption to post-quantum cryptographic standards, projected to reduce remediation costs by 35%</li>
+          <li>Catalogued 40+ system vulnerabilities in a structured asset register, applying risk prioritisation and impact assessment frameworks</li>
+          <li>Authored business cases and technical briefing documents suitable for executive and ministerial audiences</li>
+          <li>Delivered all five project milestones within the 16-week PMO-governed timeline with no scope variations</li>
+          <li>Applied risk management frameworks including probability-impact matrices and residual risk assessments across live government infrastructure</li>
+          <li>Produced traceable, audit-ready documentation aligned with SA Government PMO governance requirements</li>
+        </ul>
+        <div class="project-section-title">Measurable Outcomes</div>
+        <div class="project-outcomes">
+          <span class="outcome-badge">Higher Distinction awarded</span>
+          <span class="outcome-badge">15+ critical process gaps identified</span>
+          <span class="outcome-badge">35% projected cost reduction roadmap</span>
+          <span class="outcome-badge">40+ vulnerabilities catalogued</span>
+          <span class="outcome-badge">All 5 milestones delivered on time</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ASPIRE SYSTEMS PROJECT PAGE -->
+<div class="project-page" id="page-aspire">
+  <div class="project-page-inner">
+    <button class="back-btn" onclick="closePage()">Back to Experience</button>
+    <div class="project-page-header">
+      <span class="company-label">Aspire Systems · Chennai, India · AU / UK / US Clients</span>
+      <h2>Senior Business Test Analyst</h2>
+      <span class="period-badge">July 2022 – February 2024</span>
+    </div>
+    <div class="role-summary">
+      <p>Led end-to-end business analysis and test delivery across concurrent enterprise digital transformation projects serving Australian, UK, and US clients. Managed 500+ requirements end-to-end, authored test plans and acceptance criteria, facilitated UAT with business stakeholders, and maintained a zero defect backlog record across all engagements. Awarded Role Star for consistent high-quality delivery.</p>
+    </div>
+    <div class="projects-list">
+
+      <div class="project-card">
+        <div class="project-card-num">Project 01</div>
+        <h3>Follett Internet Page — Desktop to Web Migration</h3>
+        <p class="project-overview">Follett is a leading educational content and library management platform serving K–12 and higher education institutions across the US and internationally. This engagement involved migrating Follett's legacy desktop application to a modern web-based platform, incorporating significant UI/UX enhancements and new functionality to support educators and librarians managing large digital content catalogues. I operated as the Business Test Analyst and Project Manager, responsible for bridging requirements, managing delivery, and ensuring quality across the full migration lifecycle.</p>
+        <div class="project-section-title">Business Analysis Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Elicited, documented, and managed 200+ functional and non-functional requirements through stakeholder interviews, workshops, and JAD sessions</li>
+          <li>Decomposed business requirements into user stories with clear acceptance criteria, mapped to sprint delivery cycles in Jira</li>
+          <li>Facilitated process mapping sessions to compare desktop workflows against the proposed web interface, identifying 30+ process improvement opportunities</li>
+          <li>Authored business analysis artefacts including BRDs, FRDs, user story maps, and requirements traceability matrices (RTM)</li>
+          <li>Conducted gap analysis between legacy desktop functionality and web platform capabilities, driving backlog prioritisation</li>
+          <li>Managed product backlog in Jira — creating, refining, and prioritising epics, stories, and tasks across multiple sprints</li>
+          <li>Facilitated sprint planning, daily standups, sprint reviews, and retrospective meetings with cross-functional teams</li>
+          <li>Coordinated UAT cycles, managed user acceptance sign-off, and tracked defects to closure with zero residual backlog</li>
+          <li>Managed stakeholder communications across US time zones, producing weekly status reports and escalation summaries</li>
+          <li>Oversaw project timelines, resource allocation, and milestone tracking within the PMO governance framework</li>
+        </ul>
+        <div class="project-section-title">Test Analyst Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Designed and executed comprehensive test strategies covering functional, regression, integration, and UAT testing</li>
+          <li>Authored 150+ test cases aligned to acceptance criteria, covering web-specific scenarios including browser compatibility and responsive design</li>
+          <li>Managed 180+ defects in Jira across severity tiers, maintaining zero backlog at every sprint close</li>
+          <li>Validated data migration accuracy from desktop to web, confirming content integrity across all platform records</li>
+          <li>Performed enhancement testing for new features introduced during migration, including search, filtering, and catalogue management workflows</li>
+          <li>Conducted role-based access control validation across five user permission tiers with zero access failures at UAT sign-off</li>
+        </ul>
+        <div class="project-section-title">Measurable Outcomes</div>
+        <div class="project-outcomes">
+          <span class="outcome-badge">Successful desktop-to-web migration</span>
+          <span class="outcome-badge">Zero backlog at all UAT milestones</span>
+          <span class="outcome-badge">30+ process improvements identified</span>
+          <span class="outcome-badge">180+ defects managed to closure</span>
+          <span class="outcome-badge">Role Star recognition awarded</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-num">Project 02</div>
+        <h3>Exponential E / CloudPort Lite — Desktop to Web Migration</h3>
+        <p class="project-overview">Exponential E is a UK-based telecommunications and cloud services provider delivering enterprise connectivity and cloud infrastructure to large organisations. CloudPort Lite is their cloud ordering and management portal. This project involved migrating CloudPort Lite from a desktop application to a fully web-based platform, enabling customers to provision, manage, and monitor cloud services entirely through a browser-based interface. I served as Business Test Analyst and Project Manager across the full delivery lifecycle.</p>
+        <div class="project-section-title">Business Analysis Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Led requirements elicitation workshops with UK-based product owners and internal stakeholders across multiple time zones</li>
+          <li>Documented 180+ requirements across cloud provisioning, user management, service ordering, and billing workflows</li>
+          <li>Created end-to-end process maps comparing desktop workflows to the proposed web platform, driving UI/UX design decisions</li>
+          <li>Wrote user stories and acceptance criteria for cloud portal features including self-service ordering, dashboard views, and automated alerts</li>
+          <li>Maintained requirements traceability matrix (RTM) linking business needs to test cases and delivered functionality</li>
+          <li>Managed product backlog in Azure DevOps — prioritising features, coordinating sprint planning, and tracking velocity</li>
+          <li>Facilitated sprint ceremonies including retrospectives, backlog grooming, and stakeholder demos across Agile delivery cycles</li>
+          <li>Coordinated UAT with business users, managed sign-off documentation, and tracked residual risks to resolution</li>
+          <li>Produced project status reports, risk registers, and executive-level update packs for UK client leadership</li>
+        </ul>
+        <div class="project-section-title">Test Analyst Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Designed test strategies covering functional, integration, regression, performance, and UAT for a web-based cloud portal</li>
+          <li>Authored 200+ test cases covering cloud service provisioning, order workflows, role-based access, and system integrations</li>
+          <li>Executed end-to-end testing for cloud ordering workflows including service activation, modification, and decommissioning</li>
+          <li>Managed 120+ defects in Azure DevOps, coordinating with developers for fix validation and regression confirmation</li>
+          <li>Performed cross-browser and cross-device compatibility testing across Chrome, Edge, Firefox, and Safari</li>
+          <li>Validated API integrations between the web portal and back-end cloud infrastructure using Postman</li>
+          <li>Confirmed data migration accuracy from desktop records to web platform with full audit trail coverage</li>
+        </ul>
+        <div class="project-section-title">Measurable Outcomes</div>
+        <div class="project-outcomes">
+          <span class="outcome-badge">Full cloud portal migration delivered</span>
+          <span class="outcome-badge">Zero backlog maintained throughout</span>
+          <span class="outcome-badge">200+ test cases executed</span>
+          <span class="outcome-badge">120+ defects resolved to closure</span>
+          <span class="outcome-badge">Multi-browser compatibility confirmed</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- AMAZON PROJECT PAGE -->
+<div class="project-page" id="page-amazon">
+  <div class="project-page-inner">
+    <button class="back-btn" onclick="closePage()">Back to Experience</button>
+    <div class="project-page-header">
+      <span class="company-label">Amazon Development Centre · Chennai, India</span>
+      <h2>Business Process Associate — Product Test & Quality</h2>
+      <span class="period-badge">July 2020 – July 2022</span>
+    </div>
+    <div class="role-summary">
+      <p>Five years of end-to-end product quality, business analysis, and requirements validation across Amazon's hardware and AI product ecosystem — including Kindle device testing and Alexa voice assistant quality improvement. Designed and executed 200+ test scenarios per release cycle, reducing defect escape rates by ~30% and cutting defect resolution time by 25%. Achieved zero critical failures across three consecutive product launches.</p>
+    </div>
+    <div class="projects-list">
+
+      <div class="project-card">
+        <div class="project-card-num">Project 01</div>
+        <h3>Kindle — Multi-Device Quality & Automation Testing</h3>
+        <p class="project-overview">Amazon Kindle is one of the world's leading e-reader ecosystems, spanning 10+ device models with different hardware configurations, display types, and software versions. This engagement involved end-to-end quality validation across multiple Kindle device generations — including functional testing, automation, performance validation, and business analysis work to support product enhancements. I operated across both the QA and BA domains, ensuring both technical quality and business requirement alignment across each release cycle.</p>
+        <div class="project-section-title">Business Analysis Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Elicited and documented product enhancement requirements through collaboration with product managers, engineers, and UX teams</li>
+          <li>Decomposed feature requirements into user stories with clear acceptance criteria for sprint-based delivery in Jira</li>
+          <li>Conducted process mapping for new Kindle features, defining user journeys across multiple device configurations and firmware versions</li>
+          <li>Managed product backlog items in Jira — creating, refining, and prioritising user stories aligned to quarterly release roadmaps</li>
+          <li>Facilitated sprint planning, retrospective, and review meetings with cross-functional product teams</li>
+          <li>Coordinated UAT cycles with internal stakeholders, tracking sign-off readiness and defect resolution for each device variant</li>
+          <li>Maintained requirements traceability across 10+ Kindle device models, ensuring full coverage between specifications and test execution</li>
+          <li>Produced clear defect documentation and root cause analysis reports for product owners, reducing resolution turnaround time by 25%</li>
+          <li>Communicated release readiness status to senior stakeholders, contributing to a 20% reduction in post-release escalations</li>
+        </ul>
+        <div class="project-section-title">Test Analyst & Automation Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Designed and executed 200+ manual test scenarios per release cycle covering functional, regression, sanity, and performance testing</li>
+          <li>Developed and maintained automation scripts for Kindle device performance testing, validating rendering speed, load time, and memory usage across device tiers</li>
+          <li>Executed automation test suites using scripted frameworks, validating content rendering accuracy across manga, comics, and image-heavy publications</li>
+          <li>Managed 300+ defects in JIRA across severity levels, achieving zero critical failures in three consecutive product launches</li>
+          <li>Conducted cross-device compatibility testing ensuring consistent behaviour across all active Kindle hardware models</li>
+          <li>Performed regression testing after firmware updates and hotfixes, maintaining stable baselines between releases</li>
+          <li>Validated content rendering for right-to-left text (manga), image-heavy comics, and mixed-media formats across all display configurations</li>
+        </ul>
+        <div class="project-section-title">Measurable Outcomes</div>
+        <div class="project-outcomes">
+          <span class="outcome-badge">30% defect escape rate reduction</span>
+          <span class="outcome-badge">25% faster defect resolution</span>
+          <span class="outcome-badge">Zero critical failures — 3 launches</span>
+          <span class="outcome-badge">20% reduction in post-release escalations</span>
+          <span class="outcome-badge">200+ test scenarios per release cycle</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-num">Project 02</div>
+        <h3>Alexa — Voice AI Quality & Data Efficiency Testing</h3>
+        <p class="project-overview">Amazon Alexa is one of the world's most widely deployed voice AI assistants. In the early years of Alexa's development (2016 era), wake-word detection and voice response accuracy were critical engineering and quality challenges. This engagement involved testing Alexa's wake-word efficiency, data logging quality, and response accuracy — feeding structured testing data back into the machine learning pipeline to improve recognition performance. I combined QA execution with business analysis responsibilities to ensure structured, traceable quality improvement across the voice assistant platform.</p>
+        <div class="project-section-title">Business Analysis Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Elicited requirements from AI product teams related to wake-word detection thresholds, response accuracy, and voice recognition performance targets</li>
+          <li>Documented test specifications and acceptance criteria for voice interaction scenarios across different accents, noise environments, and device types</li>
+          <li>Facilitated cross-functional meetings between QA, data science, and engineering teams to align on quality benchmarks and improvement priorities</li>
+          <li>Mapped testing workflows and data logging processes, identifying gaps in data collection coverage that affected ML model training quality</li>
+          <li>Maintained structured logs of voice interaction outcomes, categorising failures by wake-word miss rate, false positive rate, and response latency</li>
+          <li>Coordinated retrospective reviews of Alexa quality cycles, producing structured reports on testing patterns and recommended ML training focus areas</li>
+          <li>Communicated quality findings to product stakeholders in accessible business language, translating technical test outcomes into actionable product decisions</li>
+        </ul>
+        <div class="project-section-title">Test Analyst Responsibilities</div>
+        <ul class="project-responsibilities">
+          <li>Designed and executed structured test scenarios for Alexa wake-word detection across varied acoustic environments and distances</li>
+          <li>Logged voice interaction outcomes with precision, providing structured data to machine learning teams for model retraining and improvement</li>
+          <li>Validated Alexa response accuracy across a wide range of command types, including music playback, device control, calendar queries, and general knowledge</li>
+          <li>Conducted regression testing after each model update, confirming improvements in wake-word efficiency without degradation of response quality</li>
+          <li>Performed sanity testing across device hardware variants to ensure consistent voice recognition performance across Echo device generations</li>
+          <li>Documented false positive and miss-rate patterns, contributing structured defect data that informed the ML training pipeline adjustments which ultimately improved Alexa's wake-word efficiency by a measurable margin</li>
+        </ul>
+        <div class="project-section-title">Measurable Outcomes</div>
+        <div class="project-outcomes">
+          <span class="outcome-badge">Measurable improvement in Alexa wake-word efficiency</span>
+          <span class="outcome-badge">Structured data logging pipeline established</span>
+          <span class="outcome-badge">Sanity & regression coverage across all Echo variants</span>
+          <span class="outcome-badge">Testing contributions fed directly into ML retraining</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MAIN SITE -->
 <nav>
   <div class="nav-logo">Nivashini Adhi</div>
   <ul class="nav-links">
@@ -438,8 +483,8 @@
 <section class="hero">
   <div class="hero-content">
     <div class="hero-tag">Adelaide, SA &nbsp;·&nbsp; Open to Work</div>
-    <h1>Test Business<br/><em>Analyst.</em></h1>
-    <p class="hero-sub">Six years bridging the gap between what the business needs and what gets built — through sharp requirements, rigorous testing and outcomes you can actually measure.</p>
+    <h1>Information Technology<br/><em>Business Consultant.</em></h1>
+    <p class="hero-sub">Seven years bridging the gap between what the business needs and what gets built — through sharp requirements, rigorous testing, project management, and outcomes you can actually measure.</p>
     <div class="hero-stats">
       <div class="stat-item">
         <div class="stat-num">500+</div>
@@ -474,8 +519,8 @@
   <div class="about-grid">
     <div class="about-text">
       <h2 class="section-title">Curious by nature.<br/>Precise by practice.</h2>
-      <p>I am a Test Business Analyst with six years of experience across digital platforms, eCommerce systems, cloud applications and government transformation programmes. I have worked across Australia, the UK and the US — and I am now based in Adelaide, ready to bring everything I have learned to organisations here that are building something meaningful.</p>
-      <p>What drives me is not just ticking requirements off a list. It is understanding why something is being built, who it serves and what it will take to make sure it actually works when it lands in the hands of real users. I bridge the gap between business and technical teams — translating strategy into testable, traceable outcomes.</p>
+      <p>I am an Information Technology Business Consultant with seven years of experience across digital platforms, eCommerce systems, cloud applications, AI products, and government transformation programmes. I have worked across Australia, the UK and the US — and I am now based in Adelaide, ready to bring everything I have learned to organisations here that are building something meaningful.</p>
+      <p>What drives me is not just ticking requirements off a list. It is understanding why something is being built, who it serves and what it will take to make sure it actually works when it lands in the hands of real users. I bridge the gap between business and technical teams — translating strategy into testable, traceable, measurable outcomes.</p>
       <p>Outside of work I am someone who genuinely loves connecting with people. I attend industry events, stay active in the Adelaide tech community and believe strongly that the relationships you build are just as valuable as the skills on your resume.</p>
     </div>
     <div class="about-highlights">
@@ -493,7 +538,7 @@
       </div>
       <div class="highlight-card">
         <h4>Zero Backlog. Every Time.</h4>
-        <p>Across six years and every client engagement — Australian, UK and US — I have never left a defect backlog behind.</p>
+        <p>Across seven years and every client engagement — Australian, UK and US — I have never left a defect backlog behind.</p>
       </div>
     </div>
   </div>
@@ -505,51 +550,75 @@
   <h2 class="section-title">Experience</h2>
   <div class="exp-timeline">
 
-    <div class="exp-item">
+    <!-- 1. AALA CONSULTANCY -->
+    <div class="exp-item" onclick="openPage('page-aala')">
       <div class="exp-date">
-        <div class="year">2025</div>
-        <span class="period">Aug – Dec 2025</span>
+        <div class="year">2026</div>
+        <span class="period">Jan 2026 – Present</span>
       </div>
       <div class="exp-line"></div>
       <div class="exp-body">
-        <h3>Consultant Internship — BA & Governance</h3>
-        <div class="exp-company">Department of Treasury & Finance · SA Government · Adelaide</div>
+        <h3>Information Technology Business Consultant</h3>
+        <div class="exp-company">Aala Consultancy · Adelaide</div>
+        <p>Lead Consultant – ICT Quality Assurance, responsible for designing and delivering the QAoALA Career Accelerator Program. Operating as a practitioner-educator combining mentoring, facilitation, and real-world industry judgement to build delivery-ready QA capability aligned with Australian workplace standards and Aala's broader digital consulting philosophy.</p>
+        <div class="exp-tags">
+          <span class="tag">ICT Consulting</span><span class="tag">Program Design</span><span class="tag">QA Leadership</span><span class="tag">Mentoring</span><span class="tag">Curriculum Development</span><span class="tag">Project Management</span>
+        </div>
+        <a class="view-projects-btn" onclick="event.stopPropagation(); openPage('page-aala')">View Projects</a>
+      </div>
+    </div>
+
+    <!-- 2. DEPT TREASURY & FINANCE -->
+    <div class="exp-item" onclick="openPage('page-treasury')">
+      <div class="exp-date">
+        <div class="year">2025</div>
+        <span class="period">Jul 2025 – Dec 2025</span>
+      </div>
+      <div class="exp-line"></div>
+      <div class="exp-body">
+        <h3>Consultant — BA & Governance</h3>
+        <div class="exp-company">Department of Treasury & Finance · SA Government · Internship · Adelaide</div>
         <p>Selected to lead a post-quantum cryptography risk and digital transformation strategy engagement. Identified 15+ critical process gaps across live government enterprise systems, built a phased digital transition roadmap projected to reduce remediation costs by 35%, and catalogued 40+ system vulnerabilities in a structured asset register. Delivered all five project milestones on time within a 16-week PMO-governed framework. Awarded a Higher Distinction.</p>
         <div class="exp-tags">
           <span class="tag">Current-State Analysis</span><span class="tag">Business Cases</span><span class="tag">PMO Governance</span><span class="tag">Stakeholder Workshops</span><span class="tag">Risk Management</span>
         </div>
+        <a class="view-projects-btn" onclick="event.stopPropagation(); openPage('page-treasury')">View Projects</a>
       </div>
     </div>
 
-    <div class="exp-item">
+    <!-- 3. ASPIRE SYSTEMS -->
+    <div class="exp-item" onclick="openPage('page-aspire')">
       <div class="exp-date">
         <div class="year">2022</div>
         <span class="period">Jul 2022 – Feb 2024</span>
       </div>
       <div class="exp-line"></div>
       <div class="exp-body">
-        <h3>Senior Business Analyst — Test & Requirements</h3>
+        <h3>Senior Business Test Analyst</h3>
         <div class="exp-company">Aspire Systems · Chennai, India · AU / UK / US Clients</div>
-        <p>Led end-to-end BA and test delivery across three concurrent enterprise digital projects: a cloud ordering platform, a SharePoint CMS intranet and a ServiceNow ITSM implementation. Managed 500+ requirements end-to-end, authored test plans and acceptance criteria, facilitated UAT with business stakeholders and managed 300+ defects in JIRA — maintaining a zero backlog record across all engagements. Validated role-based access controls across four user tiers with zero access failures at UAT sign-off.</p>
+        <p>Led end-to-end BA and test delivery across enterprise digital transformation projects including desktop-to-web migrations for Follett Internet Page and Exponential E's CloudPort Lite. Managed 500+ requirements end-to-end, authored test plans and acceptance criteria, facilitated UAT, and maintained a zero backlog record across all engagements. Awarded Role Star for consistent high-quality delivery.</p>
         <div class="exp-tags">
           <span class="tag">UAT & SIT</span><span class="tag">JIRA</span><span class="tag">Salesforce</span><span class="tag">ServiceNow</span><span class="tag">SharePoint CMS</span><span class="tag">Azure DevOps</span><span class="tag">Agile</span>
         </div>
+        <a class="view-projects-btn" onclick="event.stopPropagation(); openPage('page-aspire')">View Projects</a>
       </div>
     </div>
 
-    <div class="exp-item">
+    <!-- 4. AMAZON -->
+    <div class="exp-item" onclick="openPage('page-amazon')">
       <div class="exp-date">
-        <div class="year">2017</div>
-        <span class="period">Jun 2017 – Jul 2022</span>
+        <div class="year">2020</div>
+        <span class="period">Jul 2020 – Jul 2022</span>
       </div>
       <div class="exp-line"></div>
       <div class="exp-body">
-        <h3>Business Associate — Product Test & Quality</h3>
+        <h3>Business Process Associate — Product Test & Quality</h3>
         <div class="exp-company">Amazon Development Centre · Chennai, India</div>
-        <p>Five years of end-to-end product quality and requirements validation across 10+ Kindle device models. Designed and executed 200+ test scenarios per release cycle, reducing requirement-related defect escape rates by ~30% and cutting average defect resolution time by 25% through clearer defect documentation. Achieved zero critical content-rendering failures across three consecutive product launches. Contributed to a 20% reduction in post-release escalations through proactive stakeholder communication during rollouts.</p>
+        <p>End-to-end product quality, business analysis, and requirements validation across Amazon Kindle (10+ device models) and Alexa voice AI. Designed and executed 200+ test scenarios per release cycle, reduced defect escape rates by ~30%, cut defect resolution time by 25%, and achieved zero critical failures across three consecutive product launches. Contributed structured testing data to Alexa's ML improvement pipeline.</p>
         <div class="exp-tags">
-          <span class="tag">Test Design</span><span class="tag">Defect Management</span><span class="tag">Cross-functional Collaboration</span><span class="tag">Product Quality</span><span class="tag">Change Management</span>
+          <span class="tag">Test Design</span><span class="tag">Automation</span><span class="tag">Defect Management</span><span class="tag">Performance Testing</span><span class="tag">Voice AI Testing</span><span class="tag">Product Quality</span>
         </div>
+        <a class="view-projects-btn" onclick="event.stopPropagation(); openPage('page-amazon')">View Projects</a>
       </div>
     </div>
 
@@ -567,9 +636,9 @@
         <li>Test Plan & Test Case Design</li>
         <li>UAT & SIT Facilitation</li>
         <li>Defect Management & Root Cause Analysis</li>
-        <li>Regression Testing</li>
+        <li>Regression & Sanity Testing</li>
+        <li>Performance & Automation Testing</li>
         <li>Release Readiness Reporting</li>
-        <li>Manual Testing</li>
       </ul>
     </div>
     <div class="skill-category">
@@ -578,9 +647,20 @@
         <li>Requirements Elicitation & Documentation</li>
         <li>User Stories & Acceptance Criteria</li>
         <li>Gap Analysis & Future-State Modelling</li>
+        <li>Process Mapping & Workflow Design</li>
         <li>Business Case Preparation</li>
         <li>Traceability Matrix (RTM)</li>
-        <li>Process Mapping</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h4>Project Management</h4>
+      <ul class="skill-list">
+        <li>Backlog Management & Prioritisation</li>
+        <li>Sprint Planning & Retrospectives</li>
+        <li>Timeline & Milestone Tracking</li>
+        <li>Stakeholder Communication</li>
+        <li>Risk & Issue Management</li>
+        <li>PMO Governance Frameworks</li>
       </ul>
     </div>
     <div class="skill-category">
@@ -588,20 +668,9 @@
       <ul class="skill-list">
         <li>JIRA · Confluence · Azure DevOps</li>
         <li>Salesforce · ServiceNow</li>
-        <li>SharePoint CMS</li>
+        <li>SharePoint CMS · Postman</li>
         <li>Agile / Scrum · Waterfall · SDLC</li>
-        <li>PMO Governance Frameworks</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h4>Stakeholder & Delivery</h4>
-      <ul class="skill-list">
-        <li>Stakeholder Workshops & Facilitation</li>
-        <li>Vendor & Third-Party Collaboration</li>
-        <li>Executive Communication</li>
-        <li>Risk & Issue Management</li>
-        <li>Change Management</li>
-        <li>End-to-End Project Delivery</li>
+        <li>ICT Consulting & Program Design</li>
       </ul>
     </div>
   </div>
@@ -640,7 +709,7 @@
     <div class="ach-card">
       <div class="ach-icon">✅</div>
       <h4>Zero Backlog — Every Engagement</h4>
-      <p>Maintained a zero defect backlog record across all client engagements serving Australian, UK and US enterprise clients simultaneously over two years at Aspire Systems.</p>
+      <p>Maintained a zero defect backlog record across all client engagements serving Australian, UK and US enterprise clients simultaneously over seven years of professional delivery.</p>
     </div>
   </div>
 </section>
@@ -652,7 +721,30 @@
   <p class="contact-sub">I am Adelaide-based, immediately available and open to full-time, part-time or contract opportunities. Always happy to connect.</p>
   <div class="contact-links">
     <a href="tel:+61449982122" class="contact-link">📞 +61 449 982 122</a>
-    <a href="/cdn-cgi/l/email-protection#026c6b7463716a6b6c313242656f636b6e2c616d6f" class="contact-link">✉️ <span class="__cf_email__" data-cfemail="fd93948b9c8e959493cecdbd9a909c9491d39e9290">[email&#160;protected]</span></a>
+    <a href="mailto:nivashini.adhi@gmail.com" class="contact-link">✉️ nivashini.adhi@gmail.com</a>
     <a href="https://linkedin.com" target="_blank" class="contact-link">🔗 LinkedIn Profile</a>
   </div>
-<
+</section>
+
+<footer>
+  <p>© 2026 Nivashini Adhi · Adelaide, SA · Information Technology Business Consultant</p>
+</footer>
+
+<script>
+  function openPage(id) {
+    document.getElementById(id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
+  }
+  function closePage() {
+    document.querySelectorAll('.project-page').forEach(p => p.classList.remove('active'));
+    document.body.style.overflow = '';
+  }
+  // Close on escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePage();
+  });
+</script>
+
+</body>
+</html>
